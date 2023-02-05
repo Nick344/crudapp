@@ -5,8 +5,9 @@ import java.util.Scanner;
 public class MainView {
   private final Scanner scanner = new Scanner(System.in);
 
-  private SkillView skillView = new SkillView();
-  private SpecialtyView specialtyView = new SpecialtyView();
+  private final SkillView skillView = new SkillView();
+  private final SpecialtyView specialtyView = new SpecialtyView();
+  private final DeveloperView developerView = new DeveloperView();
 
   public void mainMenu() {
     while (true) {
@@ -18,6 +19,9 @@ public class MainView {
       int choice = scanner.nextInt();
 
       switch (choice) {
+        case 1:
+          developerView.menu();
+          break;
         case 2:
           specialtyView.menu();
           break;
