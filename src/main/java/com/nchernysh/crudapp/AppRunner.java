@@ -7,5 +7,4 @@ public class AppRunner {
     MainView mainView = new MainView();
     mainView.mainMenu();
   }
-
 }
